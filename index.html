@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0F1E3D">
+
+<title>Formation Robot Structural Analysis en ligne — Global Civil | 10 octobre 2026</title>
+<meta name="description" content="Formation professionnelle en ligne sur Robot Structural Analysis : modélisation, charges, analyse et dimensionnement de structures béton armé et charpente métallique. Encadrée par un ingénieur génie civil expert. Début le 10 octobre 2026.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://globalcivil.com/formation-robot-structural-analysis">
+<!-- SEO: remplacez l'URL canonique ci-dessus par l'adresse réelle une fois la page mise en ligne -->
+
+<!-- Open Graph / réseaux sociaux -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Formation Robot Structural Analysis en ligne — Global Civil">
+<meta property="og:description" content="Modélisez, chargez, analysez et dimensionnez vos structures comme un ingénieur. Formation en ligne, 3 semaines, dès le 10 octobre 2026.">
+<meta property="og:locale" content="fr_FR">
+<!-- SEO: ajoutez ici og:image et og:url avec des liens absolus (https://...) une fois la page hébergée : les aperçus de partage n'acceptent pas les images encodées en base64 -->
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/jpeg" href="public/logo-global-civil.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Formation Robot Structural Analysis",
+  "description": "Formation professionnelle en ligne : modélisation complète des structures, définition des charges, analyse des résultats, dimensionnement et ferraillage béton armé et charpente métallique.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Global Civil",
+    "sameAs": "https://global-civil.mymaketou.shop",
+    "email": "contact.globalcivil@gmail.com"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "startDate": "2026-10-10T19:00:00+01:00",
+    "endDate": "2026-10-31T21:00:00+01:00",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://global-civil.mymaketou.shop/products/coaching-prive-4/checkout"
+    }
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Réservation de place",
+      "price": "10000",
+      "priceCurrency": "XAF",
+      "url": "https://global-civil.mymaketou.shop/products/coaching-prive-4/checkout",
+      "availability": "https://schema.org/LimitedAvailability"
+    },
+    {
+      "@type": "Offer",
+      "name": "Formation complète",
+      "price": "80000",
+      "priceCurrency": "XAF",
+      "url": "https://global-civil.mymaketou.shop/products/coaching-prive-4-4/checkout",
+      "availability": "https://schema.org/LimitedAvailability"
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0F1E3D;
+    --blueprint:#1B3A63;
+    --crimson:#C81D33;
+    --crimson-dark:#A5162A;
+    --amber:#E89A1C;
+    --paper:#F7F6F2;
+    --card:#FFFFFF;
+    --steel:#5B6472;
+    --ink:#14202E;
+    --line: rgba(15,30,61,0.12);
+    --grid: rgba(27,58,99,0.07);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    padding-bottom:78px;
+  }
+  @media (min-width:761px){ body{ padding-bottom:0; } }
+  img{max-width:100%;display:block;}
+  h1,h2,h3{
+    font-family:'Space Grotesk', sans-serif;
+    color:var(--navy);
+    margin:0;
+    line-height:1.14;
+    letter-spacing:-0.01em;
+  }
+  .mono{ font-family:'IBM Plex Mono', monospace; }
+  a{color:inherit;}
+  .wrap{ max-width:1180px; margin:0 auto; padding:0 20px; }
+  @media (min-width:641px){ .wrap{padding:0 32px;} }
+
+  .grid-bg{
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 34px 34px;
+  }
+
+  /* ---------- BUTTON ---------- */
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding:14px 24px;
+    background:var(--crimson);
+    color:#fff;
+    font-family:'Space Grotesk'; font-weight:600; font-size:14.5px;
+    border:none; border-radius:7px;
+    cursor:pointer; text-decoration:none;
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    box-shadow:0 10px 24px rgba(200,29,51,0.28);
+  }
+  @media (min-width:641px){ .btn{ padding:15px 28px; font-size:15px; } }
+  .btn:hover{ background:var(--crimson-dark); transform:translateY(-2px); box-shadow:0 14px 28px rgba(200,29,51,0.34);}
+  .btn:active{ transform:translateY(0); }
+  .btn-nav{ padding:10px 16px; font-size:13.5px; box-shadow:none; }
+  .btn-nav:hover{ box-shadow:0 8px 18px rgba(200,29,51,0.28); }
+
+  /* ---------- NAV ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(247,246,242,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+    transition:box-shadow .25s ease;
+  }
+  header.scrolled{ box-shadow:0 6px 18px rgba(15,30,61,0.08); }
+  .nav-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:12px 20px; max-width:1180px; margin:0 auto;
+  }
+  @media (min-width:641px){ .nav-inner{ padding:14px 32px; } }
+  .brand{ display:flex; align-items:center; gap:10px; }
+  .brand img{ width:36px; height:36px; border-radius:6px; object-fit:cover; }
+  @media (min-width:641px){ .brand img{ width:40px; height:40px; } }
+  .brand-text{ font-family:'Space Grotesk'; font-weight:700; font-size:14px; color:var(--navy); }
+  .brand-text span{ display:none; font-family:'Inter'; font-weight:400; font-size:11px; color:var(--steel); }
+  @media (min-width:520px){ .brand-text span{ display:block; } }
+  @media (min-width:641px){ .brand-text{ font-size:15px; } }
+
+  /* ---------- HERO (full width, text only) ---------- */
+  .hero{ padding:32px 0 24px; }
+  @media (min-width:641px){ .hero{ padding:60px 0 40px; } }
+  .hero-text{ max-width:760px; }
+  .hero h1{ font-size:25px; }
+  @media (min-width:481px){ .hero h1{ font-size:29px; } }
+  @media (min-width:641px){ .hero h1{ font-size:40px; } }
+  .hero p.lead{ margin:16px 0 0; font-size:14.5px; color:var(--steel); max-width:640px; }
+  @media (min-width:641px){ .hero p.lead{ margin:20px 0 0; font-size:17px; } }
+  .meta-line{
+    display:flex; flex-wrap:wrap; gap:12px 16px; margin-top:18px;
+    font-size:13px; color:var(--navy); font-weight:500;
+  }
+  @media (min-width:641px){ .meta-line{ gap:20px; margin-top:24px; font-size:14px; } }
+  .meta-line span{ display:flex; align-items:center; gap:7px; }
+  .hero-actions{ margin-top:22px; display:flex; flex-direction:column; align-items:stretch; gap:12px; }
+  .hero-actions .btn{ width:100%; }
+  @media (min-width:481px){
+    .hero-actions{ flex-direction:row; align-items:center; gap:18px; }
+    .hero-actions .btn{ width:auto; }
+  }
+  @media (min-width:641px){ .hero-actions{ margin-top:30px; } }
+  .hero-actions .trust{ font-size:12.5px; color:var(--steel); }
+  .hero-actions .trust b{ color:var(--crimson); font-weight:600; }
+
+  /* ---------- PAGE LAYOUT (main + purchase sidebar) ---------- */
+  .page-layout{
+    max-width:1180px; margin:0 auto; padding:0 20px;
+    display:grid; grid-template-columns:1fr; gap:8px;
+    align-items:start;
+  }
+  @media (min-width:961px){
+    .page-layout{ grid-template-columns:1fr 336px; gap:56px; padding:0 32px; }
+  }
+  .main-col{ min-width:0; }
+  .side-col{ position:static; margin:0 0 8px; order:-1; }
+  @media (min-width:961px){ .side-col{ position:sticky; top:92px; margin:0; order:0; } }
+
+  /* ---------- ORDER CARD ---------- */
+  .order-card{
+    background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:20px; box-shadow:0 16px 40px rgba(15,30,61,0.09);
+  }
+  @media (min-width:641px){ .order-card{ padding:26px; } }
+  @media (min-width:961px){ .order-card{ padding:30px; } }
+  .order-card .oc-label{ font-family:'IBM Plex Mono'; font-size:11.5px; color:var(--steel); }
+  .oc-facts{ margin:20px 0 0; display:flex; flex-direction:column; gap:10px; }
+  .oc-fact{ display:flex; gap:10px; align-items:flex-start; font-size:13px; color:var(--ink); }
+  .oc-fact .ic{ color:var(--crimson); flex-shrink:0; width:16px; }
+  .oc-note{ margin-top:14px; font-size:11.5px; color:var(--steel); text-align:center; }
+  .oc-contact{
+    margin-top:18px; padding-top:18px; border-top:1px solid var(--line);
+    font-size:12px; color:var(--steel); display:flex; flex-direction:column; gap:6px;
+  }
+
+  /* ---------- TWO-TIER PRICING (used in sidebar and final CTA) ---------- */
+  .price-tiers{ margin-top:18px; display:flex; flex-direction:column; gap:12px; }
+  .price-tier{ border:1px solid var(--line); border-radius:8px; padding:14px 16px; background:var(--paper); }
+  .price-tier.total{ background:#fff; border-color:rgba(200,29,51,0.3); }
+  .pt-label{ font-family:'IBM Plex Mono'; font-size:10.5px; color:var(--steel); letter-spacing:0.01em; }
+  .pt-amount{ font-family:'Space Grotesk'; font-weight:700; font-size:21px; color:var(--navy); margin-top:4px; }
+  .pt-amount .cur{ font-size:11.5px; color:var(--steel); font-weight:500; margin-left:4px; }
+  .price-tier .btn{ width:100%; margin-top:12px; padding:10px; font-size:13px; box-shadow:none; }
+  .price-tier .btn:hover{ box-shadow:none; }
+  .pricing-panel .price-tier{ background:rgba(255,255,255,0.05); border-color:rgba(255,255,255,0.16); }
+  .pricing-panel .price-tier.total{ background:rgba(232,154,28,0.1); border-color:rgba(232,154,28,0.4); }
+  .pricing-panel .pt-label{ color:rgba(255,255,255,0.6); }
+  .pricing-panel .pt-amount{ color:#fff; }
+  .pricing-panel .pt-amount .cur{ color:rgba(255,255,255,0.6); }
+
+  /* ---------- HERO VIDEO (restored frame, 9:16 vertical) ---------- */
+  .video-frame{ margin-top:24px; }
+  @media (min-width:641px){ .video-frame{ margin-top:32px; } }
+  .viewport{ position:relative; width:100%; aspect-ratio:16/9; }
+  .viewport .ring{
+    position:absolute; inset:0; border-radius:10px; overflow:hidden;
+    box-shadow:0 20px 45px rgba(15,30,61,0.26);
+  }
+  .viewport .ring video{ width:100%; height:100%; object-fit:cover; }
+  .corner{ position:absolute; width:24px; height:24px; border-color:var(--crimson); border-style:solid; border-width:0; }
+  .corner.tl{ top:-8px; left:-8px; border-top-width:3px; border-left-width:3px; }
+  .corner.br{ bottom:-8px; right:-8px; border-bottom-width:3px; border-right-width:3px; }
+  .viewport-caption{ text-align:center; margin-top:14px; font-size:12px; color:var(--steel); font-family:'IBM Plex Mono', monospace; }
+
+  /* ---------- SECTION GENERIC ---------- */
+  .m-section{ padding:36px 0; border-top:1px solid var(--line); }
+  @media (min-width:641px){ .m-section{ padding:56px 0; } }
+  .m-section:first-child{ border-top:none; }
+  .section-head{ max-width:560px; margin-bottom:24px; }
+  @media (min-width:641px){ .section-head{ margin-bottom:36px; } }
+  .section-head h2{ font-size:21px; }
+  @media (min-width:641px){ .section-head h2{ font-size:26px; } }
+  .section-head p{ color:var(--steel); margin-top:9px; font-size:14px; }
+  @media (min-width:641px){ .section-head p{ font-size:15px; } }
+
+  /* ---------- PROGRAMME ---------- */
+  .prog-layout{ display:grid; grid-template-columns:1fr; gap:26px; align-items:start; }
+  @media (min-width:701px){ .prog-layout{ grid-template-columns:1fr 1fr; gap:40px; } }
+  .prog-item{ display:grid; grid-template-columns:32px 1fr; gap:14px; padding:16px 0; border-top:1px solid var(--line); }
+  @media (min-width:641px){ .prog-item{ grid-template-columns:38px 1fr; gap:16px; padding:18px 0; } }
+  .prog-item:last-child{ border-bottom:1px solid var(--line); }
+  .prog-num{ font-family:'Space Grotesk'; font-weight:700; font-size:16px; color:var(--crimson); }
+  @media (min-width:641px){ .prog-num{ font-size:18px; } }
+  .prog-item h3{ font-size:14.5px; font-weight:600; color:var(--navy); font-family:'Inter'; }
+  @media (min-width:641px){ .prog-item h3{ font-size:15.5px; } }
+  .prog-item p{ margin:5px 0 0; font-size:13.5px; color:var(--steel); }
+
+  .media-zone{
+    border:1.5px dashed rgba(27,58,99,0.3); border-radius:10px;
+    background:repeating-linear-gradient(135deg, rgba(27,58,99,0.03) 0 12px, transparent 12px 24px);
+    padding:20px; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; gap:9px; min-height:190px;
+  }
+  @media (min-width:641px){ .media-zone{ padding:26px; min-height:220px; } }
+  .media-zone .icon{ width:38px; height:38px; border-radius:50%; background:var(--navy); color:#fff; display:flex; align-items:center; justify-content:center; font-size:15px; }
+  .media-zone .title{ font-family:'Space Grotesk'; font-weight:600; font-size:13.5px; color:var(--navy); }
+  .media-zone .desc{ font-size:12px; color:var(--steel); max-width:270px; }
+
+  .video-embed{ position:relative; width:100%; aspect-ratio:16/9; border-radius:10px; overflow:hidden; box-shadow:0 16px 36px rgba(15,30,61,0.18); border:1px solid var(--line); }
+  .video-embed iframe{ position:absolute; inset:0; width:100%; height:100%; border:none; }
+  .video-caption{ margin-top:12px; font-size:12px; color:var(--steel); text-align:center; font-family:'IBM Plex Mono', monospace; }
+
+  /* ---------- FORMATEUR ---------- */
+  .instructor{ display:grid; grid-template-columns:1fr; gap:22px; align-items:center; }
+  @media (min-width:641px){ .instructor{ grid-template-columns:190px 1fr; gap:36px; } }
+  .instructor-photo{ max-width:180px; margin:0 auto; border-radius:50%; aspect-ratio:1/1; overflow:hidden; box-shadow:0 12px 28px rgba(15,30,61,0.18); }
+  .instructor-photo img{ width:100%; height:100%; object-fit:cover; }
+  @media (min-width:641px){ .instructor-photo{ max-width:none; margin:0; } }
+  .instructor-content h3{ font-size:17px; text-align:center; }
+  @media (min-width:641px){ .instructor-content h3{ font-size:19px; text-align:left; } }
+  .instructor-content p{ color:var(--steel); margin-top:12px; font-size:13.5px; }
+  @media (min-width:641px){ .instructor-content p{ font-size:14.5px; } }
+  .badge-row{ display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; justify-content:center; }
+  @media (min-width:641px){ .badge-row{ justify-content:flex-start; } }
+  .badge{ font-size:11.5px; font-family:'IBM Plex Mono',monospace; color:var(--navy); border:1px solid var(--line); border-radius:20px; padding:6px 12px; background:var(--card); }
+
+  /* ---------- INFOS (spec sheet) ---------- */
+  .spec-sheet{ border:1px solid var(--line); border-radius:8px; overflow:hidden; background:var(--card); }
+  .spec-row{ display:grid; grid-template-columns:1fr; gap:3px; padding:14px 16px; border-bottom:1px solid var(--line); }
+  @media (min-width:561px){ .spec-row{ grid-template-columns:190px 1fr; gap:20px; padding:16px 24px; } }
+  .spec-row:last-child{ border-bottom:none; }
+  .spec-row:nth-child(odd){ background:var(--paper); }
+  .spec-row .k{ font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--steel); }
+  .spec-row .v{ font-weight:600; color:var(--navy); font-size:14px; }
+  @media (min-width:641px){ .spec-row .v{ font-size:14.5px; } }
+
+  /* ---------- FAQ ---------- */
+  .faq-wrap{ max-width:660px; }
+  .faq-item{ border-top:1px solid var(--line); }
+  .faq-item:last-child{ border-bottom:1px solid var(--line); }
+  .faq-q{ display:flex; justify-content:space-between; align-items:center; padding:16px 2px; cursor:pointer; font-family:'Space Grotesk'; font-weight:600; font-size:14px; color:var(--navy); gap:12px; }
+  @media (min-width:641px){ .faq-q{ padding:18px 2px; font-size:15px; } }
+  .faq-q .plus{ font-family:'IBM Plex Mono'; font-size:16px; color:var(--crimson); transition:transform .2s ease; flex-shrink:0; }
+  .faq-item.open .plus{ transform:rotate(45deg); }
+  .faq-a{ max-height:0; overflow:hidden; transition:max-height .25s ease; font-size:13.5px; color:var(--steel); padding:0 2px; }
+  @media (min-width:641px){ .faq-a{ font-size:14px; } }
+  .faq-item.open .faq-a{ padding-bottom:16px; }
+
+  /* ---------- FINAL CTA PANEL ---------- */
+  .final-cta{ padding:40px 0; }
+  @media (min-width:641px){ .final-cta{ padding:64px 0; } }
+  .pricing-panel{ background:var(--navy); color:#fff; border-radius:12px; padding:24px; position:relative; overflow:hidden; }
+  @media (min-width:641px){ .pricing-panel{ border-radius:14px; padding:48px; } }
+  .pricing-panel::before{
+    content:""; position:absolute; inset:0;
+    background-image:linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size:28px 28px; pointer-events:none;
+  }
+  .pricing-inner{ position:relative; display:grid; grid-template-columns:1fr; gap:28px; }
+  @media (min-width:861px){ .pricing-inner{ grid-template-columns:1fr 1fr; gap:48px; } }
+  .pricing-panel h2{ color:#fff; font-size:21px; }
+  @media (min-width:641px){ .pricing-panel h2{ font-size:27px; } }
+  .include-list{ list-style:none; padding:0; margin:20px 0 0; }
+  .include-list li{ display:flex; gap:10px; align-items:flex-start; font-size:13px; color:rgba(255,255,255,0.85); padding:8px 0; border-top:1px solid rgba(255,255,255,0.1); }
+  @media (min-width:641px){ .include-list li{ font-size:14px; } }
+  .include-list li:first-child{ border-top:none; }
+  .include-list li b{ color:var(--amber); font-family:'IBM Plex Mono'; }
+  .countdown{ display:flex; gap:8px; margin-top:20px; }
+  @media (min-width:481px){ .countdown{ gap:14px; } }
+  .cd-box{ background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:6px; padding:10px 4px; text-align:center; flex:1; min-width:0; }
+  @media (min-width:481px){ .cd-box{ padding:12px 6px; min-width:62px; flex:none; } }
+  .cd-box .n{ font-family:'IBM Plex Mono'; font-size:19px; font-weight:600; }
+  @media (min-width:481px){ .cd-box .n{ font-size:23px; } }
+  .cd-box .l{ font-size:9.5px; color:rgba(255,255,255,0.6); margin-top:2px; letter-spacing:0.02em; }
+  .contact-line{ margin-top:22px; font-size:12px; color:rgba(255,255,255,0.6); display:flex; flex-direction:column; gap:4px; }
+  .scarcity{
+    display:inline-flex; align-items:center; gap:8px; background:rgba(232,154,28,0.15);
+    border:1px solid rgba(232,154,28,0.4); color:var(--amber); font-size:11.5px; font-family:'IBM Plex Mono';
+    padding:6px 13px; border-radius:20px; margin-bottom:14px;
+  }
+
+  footer{ background:var(--navy); color:rgba(255,255,255,0.7); padding:32px 0 40px; font-size:12.5px; }
+  @media (min-width:641px){ footer{ padding:36px 0 60px; } }
+  .footer-inner{ display:flex; flex-direction:column; gap:16px; align-items:flex-start; }
+  @media (min-width:641px){ .footer-inner{ flex-direction:row; justify-content:space-between; align-items:center; } }
+  .footer-inner .brand-text{ color:#fff; }
+  .footer-inner .brand-text span{ color:rgba(255,255,255,0.55); }
+
+  .sticky-cta{
+    position:fixed; left:0; right:0; bottom:0; z-index:60;
+    background:#fff; border-top:1px solid var(--line);
+    padding:10px 16px; display:flex; align-items:center; justify-content:space-between; gap:14px;
+    box-shadow:0 -8px 24px rgba(15,30,61,0.12);
+  }
+  @media (min-width:761px){ .sticky-cta{ display:none; } }
+  .sticky-cta .price-tag{ font-family:'Space Grotesk'; font-weight:700; font-size:16px; color:var(--navy); }
+  .sticky-cta .btn{ padding:11px 18px; font-size:13.5px; }
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="nav-inner">
+    <div class="brand">
+      <img src="public/logo-global-civil.jpg" alt="Logo Global Civil">
+      <div class="brand-text">Global Civil<span>La vision d'une solution constructive</span></div>
+    </div>
+    <a href="#inscription" class="btn btn-nav">S'inscrire</a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero grid-bg">
+  <div class="wrap">
+    <div class="hero-text">
+      <h1>Formation Robot Structural Analysis : modélisez, chargez, analysez et dimensionnez vos structures comme un ingénieur.</h1>
+      <p class="lead">Formation professionnelle 100&nbsp;% en ligne organisée par Global Civil, animée par un ingénieur génie civil expert en modélisation et dimensionnement de structures béton armé et charpente métallique. Trois semaines pour aller du modèle 3D à la note de calcul, encadré pas à pas.</p>
+      <div class="meta-line">
+        <span>🗓 Samedi 10 octobre 2026</span>
+        <span>🕖 19h00 – 21h00</span>
+        <span>💻 En ligne — Google Meet</span>
+      </div>
+      <div class="hero-actions">
+        <a href="https://global-civil.mymaketou.shop/products/coaching-prive-4/checkout" target="_blank" class="btn">Réserver ma place</a>
+        <span class="trust">Places limitées · <b>10 000 FCFA</b> à l'inscription, <b>80 000 FCFA</b> au total</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="page-layout">
+  <div class="main-col">
+
+    <div class="video-frame">
+      <div class="viewport">
+        <div class="ring">
+          <video autoplay muted loop playsinline>
+            <source src="public/hero-structure-demo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="corner tl"></div>
+        <div class="corner br"></div>
+      </div>
+      <p class="viewport-caption">Modèle R+6 — analyse des charges et descente sous Robot Structural Analysis</p>
+    </div>
+
+    <div class="m-section" id="programme">
+      <div class="section-head">
+        <h2>Le programme, étape par étape</h2>
+        <p>Le même cheminement qu'un projet réel de bureau d'études : du modèle géométrique jusqu'au ferraillage final.</p>
+      </div>
+      <div class="prog-layout">
+        <div class="prog-list">
+          <div class="prog-item">
+            <div class="prog-num">01</div>
+            <div><h3>Modélisation complète</h3><p>Structures bâtiment et génie civil, géométrie et éléments porteurs.</p></div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">02</div>
+            <div><h3>Définition des charges</h3><p>Combinaisons permanentes, d'exploitation, de vent et de séisme.</p></div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">03</div>
+            <div><h3>Analyse des résultats</h3><p>Lecture approfondie des résultats et descente de charges.</p></div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">04</div>
+            <div><h3>Dimensionnement &amp; ferraillage</h3><p>Poteaux, poutres, dalles, semelles et profilés acier.</p></div>
+          </div>
+        </div>
+        <div>
+          <div class="video-embed">
+            <iframe src="https://www.youtube-nocookie.com/embed/_bPtK1mCHOc?si=Ghao2D-8QTu6YnwT" title="Démonstration Robot Structural Analysis" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <p class="video-caption">Démonstration — Robot Structural Analysis en action</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-section">
+      <div class="section-head">
+        <h2>Un accompagnement direct</h2>
+        <p>Vous n'apprenez pas seul face à un écran.</p>
+      </div>
+      <div class="instructor">
+        <div class="instructor-photo">
+          <img src="public/instructor-photo.jpg" alt="Formateur — ingénieur génie civil, expert Robot Structural Analysis">
+        </div>
+        <div class="instructor-content">
+          <h3>Ingénieur en génie civil, expert Robot Structural Analysis</h3>
+          <p>La formation est encadrée par un ingénieur en génie civil spécialisé dans la modélisation et le dimensionnement de structures réelles. L'objectif&nbsp;: un accompagnement concret, pensé pour répondre directement à vos questions tout au long des trois semaines.</p>
+          <div class="badge-row">
+            <span class="badge">Suivi personnalisé</span>
+            <span class="badge">Session Q&amp;R incluse</span>
+            <span class="badge">Projets réels</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-section" id="infos">
+      <div class="section-head">
+        <h2>Informations pratiques</h2>
+        <p>Tout ce qu'il faut savoir avant de vous inscrire.</p>
+      </div>
+      <div class="spec-sheet">
+        <div class="spec-row"><div class="k">TARIF</div><div class="v">10 000 FCFA à l'inscription · 80 000 FCFA au total</div></div>
+        <div class="spec-row"><div class="k">DATE DE DÉBUT</div><div class="v">Samedi 10 octobre 2026</div></div>
+        <div class="spec-row"><div class="k">DURÉE</div><div class="v">3 semaines</div></div>
+        <div class="spec-row"><div class="k">HORAIRES</div><div class="v">19h00 – 21h00</div></div>
+        <div class="spec-row"><div class="k">FORMAT</div><div class="v">En ligne (Google Meet en direct)</div></div>
+        <div class="spec-row"><div class="k">ACCOMPAGNEMENT</div><div class="v">Suivi personnalisé et session de questions/réponses</div></div>
+        <div class="spec-row"><div class="k">APRÈS INSCRIPTION</div><div class="v">Accès automatique au groupe WhatsApp des participants et à la salle Google Meet</div></div>
+      </div>
+    </div>
+
+    <div class="m-section">
+      <div class="section-head">
+        <h2>Questions fréquentes</h2>
+      </div>
+      <div class="faq-wrap" id="faq">
+        <div class="faq-item">
+          <div class="faq-q"><span>Ai-je besoin de connaissances préalables en Robot Structural Analysis&nbsp;?</span><span class="plus">+</span></div>
+          <div class="faq-a">Non. La formation part de la prise en main du logiciel jusqu'au dimensionnement final, à un rythme accessible aux débutants motivés comme aux professionnels en perfectionnement.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><span>Que se passe-t-il juste après mon inscription&nbsp;?</span><span class="plus">+</span></div>
+          <div class="faq-a">Vous recevez automatiquement le lien d'accès au groupe WhatsApp des participants ainsi que la salle Google Meet pour la session du 10 octobre.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><span>Comment se déroule le paiement&nbsp;?</span><span class="plus">+</span></div>
+          <div class="faq-a">L'inscription de 10 000 FCFA réserve immédiatement votre place ; ce montant est déduit du coût total de la formation, fixé à 80 000 FCFA. Les deux paiements se font en ligne via nos pages sécurisées, avec confirmation à chaque étape.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><span>La formation est-elle disponible en replay&nbsp;?</span><span class="plus">+</span></div>
+          <div class="faq-a">Oui. Chaque séance est automatiquement enregistrée pendant la formation avec le formateur, puis le replay est transmis directement aux apprenants une fois la session terminée.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="side-col">
+    <div class="order-card">
+      <div class="oc-label">FORMATION ROBOT STRUCTURAL ANALYSIS</div>
+      <div class="price-tiers">
+        <div class="price-tier">
+          <div class="pt-label">RÉSERVATION DE PLACE (déduite du total)</div>
+          <div class="pt-amount">10 000 <span class="cur">FCFA</span></div>
+          <a href="https://global-civil.mymaketou.shop/products/coaching-prive-4/checkout" target="_blank" class="btn">Réserver ma place</a>
+        </div>
+        <div class="price-tier total">
+          <div class="pt-label">COÛT TOTAL DE LA FORMATION</div>
+          <div class="pt-amount">80 000 <span class="cur">FCFA</span></div>
+          <a href="https://global-civil.mymaketou.shop/products/coaching-prive-4-4/checkout" target="_blank" class="btn">Régler le montant total</a>
+        </div>
+      </div>
+      <div class="oc-facts">
+        <div class="oc-fact"><span class="ic">🗓</span><span>Début samedi 10 octobre 2026, 19h00–21h00</span></div>
+        <div class="oc-fact"><span class="ic">⏱</span><span>3 semaines, 100% en ligne (Google Meet)</span></div>
+        <div class="oc-fact"><span class="ic">👤</span><span>Encadrement par un ingénieur génie civil expert</span></div>
+        <div class="oc-fact"><span class="ic">⚠</span><span>Places limitées</span></div>
+      </div>
+      <p class="oc-note">Accès immédiat au groupe WhatsApp après inscription</p>
+      <div class="oc-contact">
+        <span>WhatsApp — <a href="https://wa.me/237673680032" target="_blank" rel="noopener">+237 673 68 00 32</a></span>
+        <span>Email — <a href="mailto:contact.globalcivil@gmail.com">contact.globalcivil@gmail.com</a></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="final-cta" id="inscription">
+  <div class="wrap">
+    <div class="pricing-panel">
+      <div class="pricing-inner">
+        <div>
+          <span class="scarcity">● Places limitées</span>
+          <h2>Réservez votre place</h2>
+          <div class="price-tiers">
+            <div class="price-tier">
+              <div class="pt-label">RÉSERVATION DE PLACE (déduite du total)</div>
+              <div class="pt-amount">10 000 <span class="cur">FCFA</span></div>
+              <a href="https://global-civil.mymaketou.shop/products/coaching-prive-4/checkout" target="_blank" class="btn">Réserver ma place</a>
+            </div>
+            <div class="price-tier total">
+              <div class="pt-label">COÛT TOTAL DE LA FORMATION</div>
+              <div class="pt-amount">80 000 <span class="cur">FCFA</span></div>
+              <a href="https://global-civil.mymaketou.shop/products/coaching-prive-4-4/checkout" target="_blank" class="btn">Régler le montant total</a>
+            </div>
+          </div>
+          <ul class="include-list">
+            <li><b>01</b> Formation complète — 3 semaines, 19h–21h</li>
+            <li><b>02</b> Accès à la salle Google Meet en direct</li>
+            <li><b>03</b> Groupe WhatsApp de suivi et d'échange</li>
+            <li><b>04</b> Session de questions/réponses avec le formateur</li>
+          </ul>
+        </div>
+        <div>
+          <div class="mono" style="font-size:13px;color:rgba(255,255,255,0.6);margin-bottom:10px;">DÉBUT DE LA FORMATION DANS&nbsp;:</div>
+          <div class="countdown" id="countdown">
+            <div class="cd-box"><div class="n" id="cd-days">–</div><div class="l">JOURS</div></div>
+            <div class="cd-box"><div class="n" id="cd-hours">–</div><div class="l">HEURES</div></div>
+            <div class="cd-box"><div class="n" id="cd-min">–</div><div class="l">MIN</div></div>
+            <div class="cd-box"><div class="n" id="cd-sec">–</div><div class="l">SEC</div></div>
+          </div>
+          <div class="contact-line">
+            <span>WhatsApp — <a href="https://wa.me/237673680032" target="_blank" rel="noopener">+237 673 68 00 32</a></span>
+            <span>Email — <a href="mailto:contact.globalcivil@gmail.com">contact.globalcivil@gmail.com</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="brand">
+      <img src="public/logo-global-civil.jpg" alt="Logo Global Civil" style="width:36px;height:36px;border-radius:6px;object-fit:cover;">
+      <div class="brand-text">Global Civil<span><a href="mailto:contact.globalcivil@gmail.com">contact.globalcivil@gmail.com</a> · <a href="https://wa.me/237673680032" target="_blank" rel="noopener">+237 673 68 00 32</a></span></div>
+    </div>
+    <div>© 2026 Global Civil — Tous droits réservés</div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <div class="price-tag">10 000 FCFA</div>
+  <a href="https://global-civil.mymaketou.shop/products/coaching-prive-4/checkout" target="_blank" class="btn">Réserver</a>
+</div>
+
+<script>
+  try {
+    var header = document.getElementById('siteHeader');
+    if (header) {
+      window.addEventListener('scroll', function(){ header.classList.toggle('scrolled', window.scrollY > 8); });
+    }
+  } catch(e) { console.error('header script error', e); }
+
+  try {
+    document.querySelectorAll('.faq-item').forEach(function(item){
+      var q = item.querySelector('.faq-q');
+      var a = item.querySelector('.faq-a');
+      if (!q || !a) return;
+      q.addEventListener('click', function(){
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(function(o){
+          o.classList.remove('open');
+          var oa = o.querySelector('.faq-a');
+          if (oa) oa.style.maxHeight = null;
+        });
+        if (!isOpen){
+          item.classList.add('open');
+          a.style.maxHeight = (a.scrollHeight + 24) + 'px';
+        }
+      });
+    });
+  } catch(e) { console.error('faq script error', e); }
+
+  try {
+    var target = new Date("2026-10-10T19:00:00+01:00").getTime();
+    function tick(){
+      var diff = target - Date.now();
+      var days = document.getElementById('cd-days');
+      var hours = document.getElementById('cd-hours');
+      var min = document.getElementById('cd-min');
+      var sec = document.getElementById('cd-sec');
+      if (!days || !hours || !min || !sec) return;
+      if (diff <= 0){ days.textContent='0'; hours.textContent='0'; min.textContent='0'; sec.textContent='0'; return; }
+      days.textContent = Math.floor(diff / 86400000);
+      hours.textContent = String(Math.floor((diff % 86400000) / 3600000)).padStart(2,'0');
+      min.textContent = String(Math.floor((diff % 3600000) / 60000)).padStart(2,'0');
+      sec.textContent = String(Math.floor((diff % 60000) / 1000)).padStart(2,'0');
+    }
+    tick();
+    setInterval(tick, 1000);
+  } catch(e) { console.error('countdown script error', e); }
+</script>
+
+</body>
+</html>
