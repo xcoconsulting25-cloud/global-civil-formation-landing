@@ -45,7 +45,7 @@ racine suffit, ou un déploiement via l'intégration GitHub.
 ## Liens externes utilisés par la page
 
 - Paiement (réservation) : `global-civil.mymaketou.shop/products/coaching-prive-4/checkout`
-- Paiement (solde total) : `global-civil.mymaketou.shop/products/coaching-prive-4-4/checkout`
+- Paiement (solde total) : `globalcivilstore.com/prd_nagyykt5/checkout`
 - Vidéo de démonstration : YouTube (`youtube-nocookie.com`)
 - WhatsApp : `wa.me/237673680032`
 - Email : `contact.globalcivil@gmail.com`
