@@ -14,7 +14,7 @@ hébergement statique.
 ```
 .
 ├── index.html            # Formation du 10 octobre (hero, programme, formateur, FAQ, CTA final)
-├── session-speciale.html # Session spéciale novembre (8 cas avancés, tarif anciens participants)
+├── session-speciale.html # Session spéciale novembre (8 cas avancés, 20 000 FCFA pour tous)
 ├── public/
 │   ├── styles.css           # Feuille de style partagée par les deux pages
 │   ├── site.js               # Scripts partagés (header, nav mobile, FAQ, compte à rebours)
@@ -56,11 +56,7 @@ racine suffit, ou un déploiement via l'intégration GitHub.
 
 - Paiement formation (réservation) : `global-civil.mymaketou.shop/products/coaching-prive-4/checkout`
 - Paiement formation (solde total) : `globalcivilstore.com/prd_nagyykt5/checkout`
-- Paiement session spéciale : `globalcivilstore.com/prd_mc7c0bef/checkout`
+- Paiement session spéciale : `globalcivilstore.com/prd_mc7c0bef/checkout` (20 000 FCFA, tarif unique pour tous)
 - Vidéo de démonstration : YouTube (`youtube-nocookie.com`)
 - WhatsApp : `wa.me/237673680032`
 - Email : `contact.globalcivil@gmail.com`
-
-Le tarif préférentiel anciens participants (20 000 FCFA) pour la session
-spéciale n'est jamais affiché publiquement ; il est transmis en privé via
-WhatsApp.
